@@ -11,6 +11,12 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
   border-radius: 1.5rem;
 }
+.our-services img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
 .our-services .mini-title {
   text-transform: uppercase;
   font-weight: bold;
