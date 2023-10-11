@@ -6,25 +6,30 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Eligibility from "./pages/Eligibility";
 import Enrollment from "./pages/Enrollment";
+import AboutUs from "./pages/AboutUs";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "enrollment",
-    element: <Enrollment/>,
+    element: <Enrollment />,
   },
   {
     path: "eligibility",
-    element: <Eligibility/>,
+    element: <Eligibility />,
+  },
+  {
+    path: "aboutus",
+    element: <AboutUs />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} />{" "}
   </React.StrictMode>
 );
 

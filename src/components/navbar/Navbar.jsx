@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>{" "}
           <li className="nav-item">
            <Link to="/enrollment" onClick={closeMenu}>
-           Enrollment
+           ENROLLMENT
            </Link>
           </li>{" "}
           <li className="nav-item">

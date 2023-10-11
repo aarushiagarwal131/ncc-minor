@@ -50,14 +50,15 @@ const EnrollmentForm = () => {
 
   return (
     <>
+      <div>
       <h1 className="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight px-100 py-40 bg-black text-white md:text-5xl lg:text-6xl">
         ENROLLMENT{" "}
         <span className="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">
-          IS OPEN{" "}
-        </span>{" "}
-      </h1>{" "}
-      <div className="px-10 text-center text-blue-600 text-2xl font-medium">
-      </div>{" "}
+          IS OPEN ..
+        </span>
+      </h1>
+      </div>
+      <div className="px-10 text-center text-blue-600 text-2xl font-medium"></div>{" "}
       <div>
         <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
           <form onSubmit={handleSubmit}>
@@ -137,7 +138,7 @@ const EnrollmentForm = () => {
                   Mechanical Engineering{" "}
                 </option>{" "}
                 <option value="TextileTechnology"> Textile Technology </option>{" "}
-              </select>
+              </select>{" "}
             </div>{" "}
             <div className="mb-4">
               <label
@@ -172,7 +173,7 @@ const EnrollmentForm = () => {
                 value={formData.year}
                 onChange={handleInputChange}
               />{" "}
-            </div>
+            </div>{" "}
             <div className="mb-4">
               <label
                 htmlFor="phone"
@@ -189,7 +190,7 @@ const EnrollmentForm = () => {
                 value={formData.phone}
                 onChange={handleInputChange}
               />{" "}
-            </div>
+            </div>{" "}
             <div className="mb-4 flex justify-center">
               <button
                 type="submit"
