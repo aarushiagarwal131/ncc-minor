@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Eligibility from "./pages/Eligibility";
 import Enrollment from "./pages/Enrollment";
-import AboutUs from "./pages/AboutUs";
+import Aboutus from "./pages/AboutUs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "aboutus",
-    element: <AboutUs />,
+    element: <Aboutus />,
   },
 ]);
 
