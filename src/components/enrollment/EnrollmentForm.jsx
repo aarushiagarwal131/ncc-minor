@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const EnrollmentForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     branch: "", // Changed the default value to an empty string
@@ -53,13 +53,11 @@ const Form = () => {
       <h1 className="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight px-100 py-40 bg-black text-white md:text-5xl lg:text-6xl">
         ENROLLMENT{" "}
         <span className="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">
-          IS OPEN
-        </span>
-      </h1>
+          IS OPEN{" "}
+        </span>{" "}
+      </h1>{" "}
       <div className="px-10 text-center text-blue-600 text-2xl font-medium">
-        {/* ADD LINK TO CONNECT TO ELIGIBILITY PAGE */}
-        Check Eligibility
-      </div>
+      </div>{" "}
       <div>
         <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
           <form onSubmit={handleSubmit}>
@@ -68,8 +66,8 @@ const Form = () => {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Name
-              </label>
+                Name{" "}
+              </label>{" "}
               <input
                 type="text"
                 id="name"
@@ -78,32 +76,32 @@ const Form = () => {
                 placeholder="Enter your name"
                 value={formData.name}
                 onChange={handleInputChange}
-              />
-            </div>
+              />{" "}
+            </div>{" "}
             <div className="mb-4">
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email {/* Updated label text to "Email" */}
-              </label>
+                Email {/* Updated label text to "Email" */}{" "}
+              </label>{" "}
               <input
                 type="text"
                 id="email"
-                name="email" 
+                name="email"
                 className="mt-1 p-2 w-full border rounded-md"
                 placeholder="Enter your College Email-ID"
                 value={formData.email}
                 onChange={handleInputChange}
-              />
-            </div>
+              />{" "}
+            </div>{" "}
             <div className="mb-4">
               <label
                 htmlFor="branch"
                 className="block text-sm font-medium text-gray-700"
               >
-                Branch
-              </label>
+                Branch{" "}
+              </label>{" "}
               <select
                 id="branch"
                 name="branch"
@@ -111,7 +109,7 @@ const Form = () => {
                 value={formData.branch}
                 onChange={handleInputChange}
               >
-                <option value="">Select your branch</option>
+                <option value=""> Select your branch </option>{" "}
                 <option value="Biotechnology"> Bio Technology </option>{" "}
                 <option value="ChemicalEngineering">
                   Chemical Engineering{" "}
@@ -138,15 +136,16 @@ const Form = () => {
                 <option value="MechanicalEngineering">
                   Mechanical Engineering{" "}
                 </option>{" "}
-                <option value="TextileTechnology"> Textile Technology </option>{" "}              </select>
-            </div>
+                <option value="TextileTechnology"> Textile Technology </option>{" "}
+              </select>
+            </div>{" "}
             <div className="mb-4">
               <label
                 htmlFor="rollNumber"
                 className="block text-sm font-medium text-gray-700"
               >
-                Roll Number
-              </label>
+                Roll Number{" "}
+              </label>{" "}
               <input
                 type="text"
                 id="rollNumber"
@@ -155,15 +154,15 @@ const Form = () => {
                 placeholder="Enter your Roll Number"
                 value={formData.rollNumber}
                 onChange={handleInputChange}
-              />
-            </div>
+              />{" "}
+            </div>{" "}
             <div className="mb-4">
               <label
                 htmlFor="year"
                 className="block text-sm font-medium text-gray-700"
               >
-                Semester
-              </label>
+                Semester{" "}
+              </label>{" "}
               <input
                 type="text"
                 id="year"
@@ -172,16 +171,15 @@ const Form = () => {
                 placeholder="Enter your Semester(1,2,3,4)"
                 value={formData.year}
                 onChange={handleInputChange}
-              />
+              />{" "}
             </div>
-
             <div className="mb-4">
               <label
                 htmlFor="phone"
                 className="block text-sm font-medium text-gray-700"
               >
-                Phone Number
-              </label>
+                Phone Number{" "}
+              </label>{" "}
               <input
                 type="tel"
                 id="phone"
@@ -190,22 +188,21 @@ const Form = () => {
                 placeholder="Enter your phone number"
                 value={formData.phone}
                 onChange={handleInputChange}
-              />
+              />{" "}
             </div>
-
             <div className="mb-4 flex justify-center">
               <button
                 type="submit"
                 className="bg-blue-500 text-white py-2 px-16 rounded-md hover:bg-blue-600"
               >
-                Register
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+                Register{" "}
+              </button>{" "}
+            </div>{" "}
+          </form>{" "}
+        </div>{" "}
+      </div>{" "}
     </>
   );
 };
 
-export default Form;
+export default EnrollmentForm;
