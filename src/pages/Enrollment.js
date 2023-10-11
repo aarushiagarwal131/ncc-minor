@@ -6,9 +6,6 @@ const Enrollment = () => {
   return (
     <>
       <Navbar />
-        <br/>
-        <br/>
-        <br/>   
       <EnrollmentForm />
       <Footer />
     </>
