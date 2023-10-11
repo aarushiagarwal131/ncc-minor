@@ -44,10 +44,9 @@ const Navbar = () => {
             </a>{" "}
           </li>{" "}
           <li className="nav-item">
-            <a href="#about" onClick={closeMenu}>
-              {" "}
-              ABOUT{" "}
-            </a>{" "}
+          <Link to="/aboutus" onClick={closeMenu}>
+           ABOUT
+           </Link>
           </li>{" "}
           <li className="nav-item">
             <a href="#events" onClick={closeMenu}>
