@@ -1,15 +1,112 @@
-import React from 'react'
-import NCCInfo from '../components/NCCinfo'
-import NCC_AT_NITJ from '../components/NCC_AT_NITJ'
-import OFFICERS from '../components/OFFICERS'   
-const AboutUs = () => {
-    return ( 
-        <>
-             <NCCInfo/>
-      <NCC_AT_NITJ/>
-      <OFFICERS/>
-        </>
-    )
-}
+import React, { useState } from "react";
+import Role from "./Role.js";
+import Activities from "./Activities.js";
+import Officers from "./Officers.js";
+import "./aboutus.css";
+import img from "../images/1.jpg";
+import img2 from "../images/2.jpg";
+import img3 from "../images/3.png";
+import img4 from "../images/4.jpg";
+import img5 from "../images/5.jpg";
+const Files = [Role, Activities, Officers];
+const Aboutus = () => {
+  const [aboutData, setAboutData] = useState(Role);
+  const [aboutData1, setAboutData1] = useState(Activities);
+  const [aboutData2, setAboutData2] = useState(Officers);
+  return (
+    <>
+      <section className="common-section our-services">
+        <div className="container mb-5">
+          <div className="row">
+            <div className="col-12 col-lg-5 text-center our-service-leftside-img">
+              <img src={img2} alt="aboutusIMg" />
+            </div>
 
-export default AboutUs
+            {/* 1section right side data  */}
+            <div className="col-12 col-lg-7 our-services-list">
+              <h3 className="mini-title">ROLE OF NCC</h3>
+
+              {aboutData.map((curElem) => {
+                const { id, title, info } = curElem;
+
+                return (
+                  <>
+                    <div className="row our-services-info" key={id}>
+                      <div className="col-10 our-services-data">
+                        <h2>{title}</h2>
+                        <p className="main-hero-para">{info}</p>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* 2nd part of bayt us section  */}
+      <section className="common-section our-services our-services-rightside">
+        <div className="container mb-5">
+          <div className="row">
+            {/* 1section right side data  */}
+            <div className="col-12 col-lg-7 our-services-list">
+              <h3 className="mini-title">ACTIVITIES</h3>
+              {aboutData1.map((curElem) => {
+                const { id, title, info } = curElem;
+                return (
+                  <>
+                    <div className="row our-services-info" key={id}>
+                      <div className="col-10 our-services-data">
+                        <h2>{title}</h2>
+                        <p className="main-hero-para">{info}</p>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+
+            {/* images section  */}
+            <div className="col-12 col-lg-5  our-service-rightside-img">
+              <img src={img3} alt="aboutusIMg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*3rd part*/}
+    </>
+  );
+};
+
+export default Aboutus;
+
+//  <section className="common-section our-services">
+//    <div className="container mb-5">
+//      <div className="row">
+//        <div className="col-12 col-lg-5 text-center our-service-leftside-img">
+//          <img src={img2} alt="aboutusIMg" />
+//        </div>
+
+//        {/* 1section right side data  */}
+//        <div className="col-12 col-lg-7 our-services-list">
+//          <h3 className="mini-title">ROLE OF NCC</h3>
+
+//          {aboutData2.map((curElem) => {
+//            const { id, title, info } = curElem;
+
+//            return (
+//              <>
+//                <div className="row our-services-info" key={id}>
+//                  <div className="col-10 our-services-data">
+//                    <h2>{title}</h2>
+//                    <p className="main-hero-para">{info}</p>
+//                  </div>
+//                </div>
+//              </>
+//            );
+//          })}
+//        </div>
+//      </div>
+//    </div>
+//  </section>;

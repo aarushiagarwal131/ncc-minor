@@ -44,9 +44,9 @@ const Navbar = () => {
             </a>{" "}
           </li>{" "}
           <li className="nav-item">
-          <Link to="/aboutus" onClick={closeMenu}>
-           ABOUT
-           </Link>
+            <Link to="/aboutus" onClick={closeMenu}>
+              ABOUT
+            </Link>
           </li>{" "}
           <li className="nav-item">
             <a href="#events" onClick={closeMenu}>
@@ -57,13 +57,13 @@ const Navbar = () => {
           <li className="nav-item">
             <a href="#annualreports" onClick={closeMenu}>
               {" "}
-              ANNUAL REPORTS{" "}
+              ALUMNI CONNECT{" "}
             </a>{" "}
           </li>{" "}
           <li className="nav-item">
-           <Link to="/enrollment" onClick={closeMenu}>
-           ENROLLMENT
-           </Link>
+            <Link to="/enrollment" onClick={closeMenu}>
+              ENROLLMENT
+            </Link>
           </li>{" "}
           <li className="nav-item">
             <a href="#faqs" onClick={closeMenu}>
