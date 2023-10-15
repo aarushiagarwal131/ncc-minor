@@ -1,6 +1,5 @@
 import React from "react";
 import { email, instagram, facebook, phone, maps, youtube } from "./import";
-import "./footer2.css";
 import img1 from "../../assets/carousel3.1.jpg";
 const Footer = () => {
   return (
@@ -27,7 +26,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="d-flex align-items-center pt-2">
-                <img src={email} />
+                <img src={email} alt="email"/>
                 <div className="px-3">
                   <p id="content" className="m-0 pb-1">
                     <a

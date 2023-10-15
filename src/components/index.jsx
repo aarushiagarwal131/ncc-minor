@@ -4,6 +4,6 @@ export { default as Footer } from "./footer/Footer";
 export { default as Hero } from "./hero/Hero";
 export { default as Enrollment } from "./enrollment/EnrollmentForm";
 export { default as Bgs } from "./bgs/Bgs";
-export { default as Footer2 } from "./footer/Footer2";
 export { default as Achievements } from "./achievements/Achievements";
-export { drfault as Blog } from "./blog/Blog";
+export { default as Blog } from "./blog/Blog";
+export {default as Aim2} from "./aim2/Aim2";

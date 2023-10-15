@@ -1,11 +1,13 @@
 import React from "react";
+import data from "./data.json";
 import {
   Navbar,
-  Home,
   Footer,
   Hero,
   Enrollment,
+  Blog,
   Bgs,
+  Aim2,
   Achievements,
 } from "./components";
 import "./App.css";
@@ -15,10 +17,9 @@ const App = () => {
       <Navbar />
       <Bgs />
       <Hero />
-
-      <Home />
       <Achievements />
-      {/* <Blog /> */}
+      <Aim2 />
+      <Blog testimonialData={data} />
       <Footer />
     </div>
   );

@@ -1,18 +1,12 @@
 import React, { useState } from "react";
 import Role from "./Role.js";
 import Activities from "./Activities.js";
-import Officers from "./Officers.js";
 import "./aboutus.css";
-import img from "../images/1.jpg";
 import img2 from "../images/2.jpg";
 import img3 from "../images/3.png";
-import img4 from "../images/4.jpg";
-import img5 from "../images/5.jpg";
-const Files = [Role, Activities, Officers];
 const Aboutus = () => {
-  const [aboutData, setAboutData] = useState(Role);
-  const [aboutData1, setAboutData1] = useState(Activities);
-  const [aboutData2, setAboutData2] = useState(Officers);
+  const [aboutData] = useState(Role);
+  const [aboutData1] = useState(Activities);
   return (
     <>
       <section className="common-section our-services">
