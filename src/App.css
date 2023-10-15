@@ -1,4 +1,5 @@
 body {
+  --primary-color: #0369a0;
   background-color: #f3f9ff;
 }
 
@@ -15,7 +16,10 @@ body {
 }
 
 .ncc-bg-blue {
-  background-color: rgb(33, 36, 135, 0.95);
+  /* background-color: rgb(33, 36, 135, 0.95); */
+  /* background-color: rgb(8 51 68); */
+  /* background-color: rgb(6, 25, 61); */
+  background-color: rgb(30 41 59);
 }
 
 .ncc-navBar {

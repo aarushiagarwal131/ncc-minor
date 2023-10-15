@@ -24,6 +24,7 @@ const Navbar = () => {
 
   return (
     <div className={color ? "header header-bg" : "header"}>
+      {/* <div className="header header-bg"> */}
       <nav className="navbar">
         <a href="/" className="logo">
           <img src={logo} alt="logo" />
