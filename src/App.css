@@ -6,6 +6,10 @@ body {
 .ncc-bg-copyright {
   background-color: #363131;
 }
+.text-accent {
+  --tw-text-opacity: 1;
+  color: hsla(201, 96%, 32%, var(--tw-text-opacity));
+}
 
 .ncc-white {
   color: #fffdfd;

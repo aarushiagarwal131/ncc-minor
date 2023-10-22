@@ -9,6 +9,8 @@ import {
   Bgs,
   Aim2,
   Achievements,
+  Photo_gallery,
+  Tabs,
 } from "./components";
 import "./App.css";
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
       <Hero />
       <Achievements />
       <Aim2 />
+      <Tabs />
+      <Photo_gallery />
       <Blog testimonialData={data} />
       <Footer />
     </div>
