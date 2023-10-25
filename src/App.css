@@ -71,4 +71,8 @@ body {
     width: 20%;
     height: 4px;
   }
+
+  .to-hide {
+    display: none;
+  }
 }

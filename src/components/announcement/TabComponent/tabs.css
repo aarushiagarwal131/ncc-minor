@@ -5,7 +5,7 @@
 }
 
 .announcement .heading {
-  margin-left: 8.5rem;
+  margin-left: 7rem;
   width: fit-content;
 }
 
@@ -16,6 +16,7 @@
   height: auto;
   min-height: 400px;
   margin: 3.5rem auto 1.5rem;
+  margin-left: 6rem;
   padding: 2rem 1rem;
 
   border-radius: 2rem;

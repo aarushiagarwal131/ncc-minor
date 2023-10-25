@@ -29,37 +29,9 @@
   padding: 1rem;
 }
 
-/* .hero .content p:first-child {
-     font-size: 3rem;
-    font-weight: 700;
-} */
-/* #typewriter {
+.hero .content p:first-child {
   font-size: 3rem;
   font-weight: 700;
-} */
-.hero {
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-.content {
-  text-align: center;
-  padding: 20px;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-}
-
-/* Styles for Typewriter effect */
-#typewriter {
-  font-size: 24px;
-  font-weight: bold;
-  color: blue; /* Adjust the color as needed */
-  border-right: 2px solid; /* Add a blinking cursor effect */
-  padding-right: 5px; /* Adjust the padding to position the cursor */
 }
 
 .hero .content p:nth-child(2) {

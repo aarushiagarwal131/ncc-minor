@@ -17,11 +17,11 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Bgs />
+      {/* <Bgs /> */}
       <Hero />
       <Achievements />
-      <Aim2 />
       <Tabs />
+      <Aim2 />
       <Photo_gallery />
       <Blog testimonialData={data} />
       <Footer />

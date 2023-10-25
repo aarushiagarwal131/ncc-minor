@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 .container {
-  width: 71%;
-  min-height: 100vh;
+  width: 100%;
+  min-height: auto;
   position: relative;
   margin: 0 auto;
-  border: 5px solid #0369a0;
+  /* border: 5px solid #0369a0; */
   border-radius: 10px;
   padding: 20px;
   margin-right: 0px;
@@ -31,7 +31,8 @@
 .container .media-container .media {
   height: 220px;
   width: 100%;
-  box-shadow: 0 5px 15px white;
+  border-radius: 10px;
+  box-shadow: 1px 0px 11px #0369a0;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5 linear;
